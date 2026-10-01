@@ -1,1 +1,8 @@
-/bin/
+# Eclipse generated files
+bin/
+.settings/
+.metadata/
+
+# OS generated files
+.DS_Store
+Thumbs.db
