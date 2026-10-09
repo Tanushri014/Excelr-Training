@@ -10,7 +10,9 @@ public class PrimeNumber2 {
 		int num=sc.nextInt();
 		
 		boolean flag=true;
-		
+		if(num<=1) {
+			System.out.println("Not a Prime");
+		}
 		for(int i=2;i<=num/2;i++)
 		{
 			
