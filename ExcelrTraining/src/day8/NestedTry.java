@@ -9,10 +9,10 @@ public class NestedTry {
 		try																	
 		{
 		Scanner sc=new Scanner(System.in);									
-		System.out.println("enter value for 0 index");  //apple
+		System.out.println("enter value for 0 index");  
 		arr[0]=sc.nextInt();
 		
-		System.out.println("enter value for 1 index");  //5
+		System.out.println("enter value for 1 index");  
 		arr[1]=sc.nextInt();
 		
 							
