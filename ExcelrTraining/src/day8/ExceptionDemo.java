@@ -15,12 +15,11 @@ public class ExceptionDemo {
 			double result=num/deno;
 			System.out.println(result);
 		}
-		catch(ArithmeticException ex) {
+		//multiple catch blocks will act as a switch case 
+		catch(ArithmeticException | InputMismatchException ex) {
 			System.out.println(ex);
 		}
-		catch(InputMismatchException ex) {
-			System.out.println(ex);
-		}
+		//default exception 
 		catch(Exception ex) {
 			System.out.println(ex.getMessage());
 		}
