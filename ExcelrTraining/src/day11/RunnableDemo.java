@@ -12,9 +12,9 @@ public class RunnableDemo {
 		Thread a1=new Thread(a);
 		Thread b1=new Thread(b);
 		
-		a1.start();
-		b1.start();
-		
+//		a1.start();
+//		b1.start();
+//		
 		
 		
 

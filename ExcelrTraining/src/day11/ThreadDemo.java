@@ -12,10 +12,10 @@ public class ThreadDemo {
 //		System.out.println(Thread.currentThread().getName());	
 		
 		//parallel execution 
-		Alpha a=new Alpha();
-		a.start();
-		Beta b=new Beta();
-		b.start();
+//		Alpha a=new Alpha();
+//		a.start();
+//		Beta b=new Beta();
+//		b.start();
 		
 	}
 
