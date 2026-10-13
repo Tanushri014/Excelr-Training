@@ -1,5 +1,7 @@
 package day12;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 public class ArrayListDemo {
 
 	public static void main(String[] args) {
@@ -20,7 +22,36 @@ public class ArrayListDemo {
 //		a.add(2); //cte
 		System.out.println(a);
 		
+		
+		List <String> list1=new ArrayList(Arrays.asList("alice","neha")); 
+		
+		
+		//add at last 
+		list1.add("medha");
+		
+		//search in arraylist 
+		String search="neha";
+		
+		
+		//normal array logic 
+		
+		//for loop and search individually 
+		if(list1.contains(search)) {
+			System.out.println("Found");
+		}
+		else {
+			System.out.println(" not Found");
+		}
 
+		
+		int index=list1.indexOf(search);
+		if(index==-1) {
+			System.out.println(" not Found");
+		}
+		else
+		{
+			System.out.println(" Found at:"+ index);
+		}
 	}
 
 }
