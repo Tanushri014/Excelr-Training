@@ -6,6 +6,9 @@ public class PrintingDemo {
 		Printing p1=new NewsPaper();
 		
 p1.print();
+
+
+
 	}
 
 }

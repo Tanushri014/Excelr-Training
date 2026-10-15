@@ -3,9 +3,17 @@ package day14;
 public class LambdaFunctionDemo {
 
 	public static void main(String[] args) {
+		Greeting g1= (name) -> {
+			System.out.println("Welcome to FSD, "+name);
+		};
+		g1.greet("Rohit");
 		
 		
-
+		
+Shape s1= (r)-> Math.PI*r*r;
+		
+		double areaOfCircle=s1.area(5);
+		System.out.println(areaOfCircle);
 	}
 //normal function 
 	public static void greet() {
