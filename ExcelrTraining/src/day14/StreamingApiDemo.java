@@ -27,6 +27,12 @@ public class StreamingApiDemo {
 		}
 //functional  programming 
 		numbers.stream().filter(n->n%2==1).map(n->n*n).forEach(n->System.out.println(n));
+		
+		
+		//sum of squares of all numbers
+				int ans=numbers.stream().map(n->n*n).reduce(0,(acc,n)->acc+n);
+				System.out.println(ans);
+				
 	}
 
 }
