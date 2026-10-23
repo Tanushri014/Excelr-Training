@@ -6,5 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Excelr-Training/MCQS/jackson-annotations-2.15.2.jar"/>
+	<classpathentry kind="lib" path="D:/Excelr-Training/MCQS/jackson-core-2.15.2.jar"/>
+	<classpathentry kind="lib" path="D:/Excelr-Training/MCQS/jackson-databind-2.15.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
