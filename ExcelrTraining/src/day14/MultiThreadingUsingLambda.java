@@ -6,28 +6,25 @@ public class MultiThreadingUsingLambda {
     public static void main(String[] args) {
 
         // First thread
-        Runnable r1 = () -> {
+         new Thread(() -> {
             System.out.println("Thread name: " + Thread.currentThread().getName());
 
             for (int i = 0; i < 1000; i++) {
                 System.out.println("\t" + i);
             }
-        };
+        }).start();
 
-        Thread tx = new Thread(r1);
-        tx.start();
-
+        
         // Second thread
-        Runnable r2 = () -> {
+        new Thread(() -> {
             System.out.println("Thread name: " + Thread.currentThread().getName());
 
             for (int i = 1000; i < 2000; i++) {
                 System.out.println("\t" + i);
             }
-        };
+        }).start();
 
-        Thread ty = new Thread(r2);
-        ty.start();
+        ;
     }
 }
 
