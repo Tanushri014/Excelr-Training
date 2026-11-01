@@ -1,5 +1,5 @@
 package day18;
-
+//linear search approach 
 import java.util.Arrays;
 
 public class CricketTeam2 {

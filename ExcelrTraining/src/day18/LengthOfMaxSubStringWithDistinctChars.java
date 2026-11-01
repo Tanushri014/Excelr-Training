@@ -13,23 +13,24 @@ public class LengthOfMaxSubStringWithDistinctChars {
 	System.out.println(max);
 	}
 
-	private static int findMaxSubString(String str) {					//[c,b]
+	private static int findMaxSubString(String str) {
 		
 		int left=0;
-		int max=0;	//0,1,2,3
-		
-		Set<Character> hashset=new HashSet();
-		for(int right=0;right<str.length();right++)
-		{
-				while(hashset.contains(str.charAt(right)))
-				{
-					hashset.remove(str.charAt(left));
-					left++;
-				}
-				hashset.add(str.charAt(right));
-				int distance=(right-left)+1;
-				max=Math.max(max, distance);
+		int max=0;
+		Set<Character> hashSet=new HashSet();
+		for(int right=0;right<str.length();right++) {
+			while(hashSet.contains(str.charAt(right))) {
+				hashSet.remove(str.charAt(left));
+				left++;
+			}
+			hashSet.add(str.charAt(right));
+			int dist=(right-left)+1;
+			max=Math.max(max, dist);
+			
+			
 		}
 		return max;
 	}
+		
+	
 }

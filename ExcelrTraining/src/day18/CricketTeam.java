@@ -1,5 +1,5 @@
 package day18;
-
+//binary search 
 import java.util.Arrays;
 
 public class CricketTeam {
