@@ -16,9 +16,9 @@ public class MaxSubArray {
 
 	private static int findMinimumSubArraySize(int[] arr,int target) {
 			int left=0;
-			int min=Integer.MAX_VALUE;								//min=100,3,3,2
+			int min=Integer.MAX_VALUE;								
 			int sum=0;
-			for(int right=0;right<arr.length;right++)				//sum=0, 2, 5, 7, 5, 6,10,7,5,8
+			for(int right=0;right<arr.length;right++)				
 			{
 				sum+=arr[right];
 				
@@ -26,7 +26,7 @@ public class MaxSubArray {
 				{
 					if(sum==target)
 						{
-						int ans= (right-left)+1;						//ans=3
+						int ans= (right-left)+1;						
 					
 						if(ans < min)
 							{
@@ -45,3 +45,5 @@ public class MaxSubArray {
 	}
 
 }
+
+
