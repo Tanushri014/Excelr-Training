@@ -3,7 +3,7 @@ package day20;
 public class RobersMaxLoot {
 
 	public static void main(String[] args) {
-		int houses[]= {4,5,8,16,3};
+		int houses[]= {4,15,8,16,3};
 		int max_loot=CalculateLoot(houses);
 		System.out.println(max_loot);
 
@@ -17,6 +17,10 @@ public class RobersMaxLoot {
 			int leave=dp[i-1];
 			dp[i]=Math.max(take,leave);
 		}
+		//for every iteration we are storing the max value in dp array with respect to the houses array 
+//		for(int i=0;i<dp.length;i++) {
+//			System.out.println(dp[i]);
+//		}
 		return dp[dp.length-1];
 	}
 
