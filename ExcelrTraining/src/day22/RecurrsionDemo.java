@@ -9,12 +9,10 @@ public class RecurrsionDemo {
 	}
 private static void brazil() {
 	System.out.println("brazil");
-	france();
-	System.out.println("i am back in main");
+	
+	brazil();
+	System.out.println("this line is never rached ...stack overflow");
 	
 }
-private static void france() {
-	System.out.println("i am in france");
-	
-}
+
 }
