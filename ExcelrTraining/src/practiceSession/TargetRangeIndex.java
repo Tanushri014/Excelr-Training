@@ -1,0 +1,81 @@
+package practiceSession;
+
+import java.util.Arrays;
+
+public class TargetRangeIndex {
+
+    public static void main(String[] args) {
+
+        int arr[] = {1,2,3,4,4,4,4,4,5,6,7};
+
+        int target = 4;
+
+        int ans[] = FindTargetRange(arr, target);
+
+        System.out.println(Arrays.toString(ans));
+    }
+
+    private static int[] FindTargetRange(int arr[], int target) {
+
+        int first = FindFirstOccurrence(arr, target);
+        int last = FindLastOccurrence(arr, target);
+
+        return new int[]{first, last};
+    }
+
+    private static int FindFirstOccurrence(int arr[], int target) {
+
+        int start = 0;
+        int end = arr.length - 1;
+        int ans = -1;
+
+        while(start <= end) {
+
+            int mid = start + (end - start) / 2;
+
+            if(arr[mid] == target) {
+
+                ans = mid;
+                end = mid - 1;
+            }
+            else if(arr[mid] < target) {
+
+                start = mid + 1;
+            }
+            else {
+
+                end = mid - 1;
+            }
+        }
+
+        return ans;
+    }
+
+    private static int FindLastOccurrence(int arr[], int target) {
+
+        int start = 0;
+        int end = arr.length - 1;
+        int ans = -1;
+
+        while(start <= end) {
+
+            int mid = start + (end - start) / 2;
+
+            if(arr[mid] == target) {
+
+                ans = mid;
+                start = mid + 1;
+            }
+            else if(arr[mid] < target) {
+
+                start = mid + 1;
+            }
+            else {
+
+                end = mid - 1;
+            }
+        }
+
+        return ans;
+    }
+}
